@@ -19,6 +19,10 @@ bot.on('text', (ctx) => {
   ctx.reply(`You said: ${ctx.message.text}`);
 });
 
+bot.on('sticker', (ctx) => {
+  ctx.reply('👍');
+})
+
 // Start the bot (uses polling by default, or you can set up a webhook)
 bot.launch();
 
